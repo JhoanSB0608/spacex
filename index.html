@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,124 +8,165 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>SPACEX</title>
 </head>
+
 <body>
     <header>
         <div class="title">
             <h1>SPACEX</h1>
         </div>
     </header>
+
     <main>
         <div class="left">
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Inertial Velocity: 7.68 km/s <small>Normal</small></div></div>
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Altitude: 390.0 km <small>Normal</small></div></div>
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Apogee: 404.4 km<small>Normal</small></div></div>
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Perigee: 389.4 km <small>Normal</small></div></div>
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Range to ISS: 0.02 km<small>Normal</small></div></div>
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Inclination: °C<small>Normal</small></div></div>
-            <div class="info"><div class="logo"><i class='bx bx-check-circle'></i></div><div class="status">Temperature: °C<small>Normal</small></div></div>
-        </div>
-        <div class="center">
-            <div>
-                <div>VEHICLE OVERVIEW</div>
-                <div>PPO2: psia</div>
-                <div>CABIN TEMP: °C</div>
-                <div>CABIN PRESSURE: psia</div>
-                <div>CO2: 0.07 mmHg</div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Inertial Velocity: 7.68 km/s <small>Normal</small></div>
             </div>
-            <div>
-                <div>RENDEZVOUS BURN SLOW</div>
-                <div>BURN GO/NO-GO: Normal</div>
-                <div>THERMAL SHIELD: Applied</div>
-                <div>CONNECTIONS</div>
-                <div>POWER COMPLETION: Awaiting</div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Altitude: 390.0 km <small>Normal</small></div>
+            </div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Apogee: 404.4 km<small>Normal</small></div>
+            </div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Perigee: 389.4 km <small>Normal</small></div>
+            </div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Range to ISS: 0.02 km<small>Normal</small></div>
+            </div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Inclination: °C<small>Normal</small></div>
+            </div>
+            <div class="info">
+                <div class="logo"><i class='bx bx-check-circle'></i></div>
+                <div class="status">Temperature: °C<small>Normal</small></div>
             </div>
         </div>
+
+        <section class="main__section">
+            <article class="section__information__1">
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+            </article>
+            <article class="section__information__container">
+                <div class="section__information__2">
+                    <div>
+                        <div class="carousel__item"></div>
+                        <div class="carousel__item"></div>
+                    </div>
+                    <div>Caja 2</div>
+                </div>
+                <div class="section__image">Caja 2</div>
+                <div class="section__information__3">
+                    <div>
+                        <div class="carousel__item"></div>
+                        <div class="carousel__item"></div>
+                    </div>
+                    <div>Caja 2</div>
+                </div>
+            </article>
+        </section>
+
         <div class="right">
             <div class="right1">
                 <div class="items">
-                    <div>Inertial Velocity 
-                        <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                        </div>
+                    <div>Inertial Velocity
+                        <progress id="progress__bar__4" class="progress__bar__4" max="100" value="30"></progress>
                     </div>
-                    <div class="info_progres">
-                        7.68 km/s
-                    </div>
+                    <div class="info_progres">7.68 km/s</div>
                 </div>
                 <div class="items">
-                    <div>Altitude 
-                        <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                        </div>
+                    <div>Altitude
+                        <progress id="progress__bar__4" class="progress__bar__4" max="100" value="30"></progress>
                     </div>
-                    <div class="info_progres">
-                        7.68 km/s
-                    </div>
+                    <div class="info_progres">7.68 km/s</div>
                 </div>
                 <div class="items">
-                    <div>Apogee 
-                        <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                        </div>
+                    <div>Apogee
+                        <progress id="progress__bar__4" class="progress__bar__4" max="100" value="30"></progress>
                     </div>
-                    <div class="info_progres">
-                        7.68 km/s
-                    </div>
+                    <div class="info_progres">7.68 km/s</div>
                 </div>
                 <div class="items">
-                    <div>Perigee 
-                        <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                        </div>
+                    <div>Perigee
+                        <progress id="progress__bar__4" class="progress__bar__4" max="100" value="30"></progress>
                     </div>
-                    <div class="info_progres">
-                        7.68 km/s
-                    </div>
+                    <div class="info_progres">7.68 km/s</div>
                 </div>
             </div>
             <div class="right2">
                 <div class="items">
-                    <div>Inclination 
-                        <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                        </div>
+                    <div>Inclination
+                        <progress id="progress__bar__4" class="progress__bar__4" max="100" value="30"></progress>
                     </div>
-                    <div class="info_progres">
-                        7.68 km/s
-                    </div>
+                    <div class="info_progres">7.68 km/s</div>
                 </div>
                 <div class="items">
-                    <div>Range to ISS 
-                        <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                        </div>
+                    <div>Range to ISS
+                        <progress id="progress__bar__4" class="progress__bar__4" max="100" value="30"></progress>
                     </div>
-                    <div class="info_progres">
-                        7.68 km/s
-                    </div>
+                    <div class="info_progres">7.68 km/s</div>
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="botones">
             <div class="box cabin">Systems</div>
             <div class="box systems">Cabin</div>
         </div>
         <div class="views">
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
-            <div>Logo</div>
+            <nav class="footer__nav">
+                <div class="footer__nav__1">
+                    <img src="storage/img/rocket.svg" alt="">
+                    <small>Overview</small>
+                </div>
+                <div class="footer__nav__2">
+                    <i class='bx bx-body' style='color:#e72d2d'></i>
+                    <small>Life</small>
+                </div>
+                <div class="footer__nav__3">
+                    <img src="storage/img/comms.svg" alt="">
+                    <small>Comms</small>
+                </div>
+                <div class="footer__nav__4">
+                    <img src="storage/img/prop.svg" alt="">
+                    <small>Prop</small>
+                </div>
+                <div class="footer__nav__5">
+                    <img src="storage/img/mech.svg" alt="">
+                    <small>Mech</small>
+                </div>
+                <div class="footer__nav__6">
+                    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'></i>
+                    <small>Power</small>
+                </div>
+                <div class="footer__nav__7">
+                    <i class='bx bxs-chip' style='color:#ffffff'></i>
+                    <small>Avionics</small>
+                </div>
+                <div class="footer__nav__8">
+                    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'></i>
+                    <small>GNC</small>
+                </div>
+                <div class="footer__nav__9">
+                    <i class='bx bxs-brightness-half' style="color: #fff"></i>
+                    <small>Thermal</small>
+                </div>
+            </nav>
         </div>
         <div class="botones2">
             <div class="box systems2">MORE</div>
         </div>
     </footer>
 </body>
+
 </html>

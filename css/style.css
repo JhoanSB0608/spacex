@@ -22,7 +22,7 @@ header {
     height: 15vh;
 }
 
-header title {
+header .title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,14 +44,22 @@ main {
 }
 
 .left,
-.center,
+.main__section,
 .right {
     flex: 1 0 20%;
     margin: 0.5rem;
 }
 
-.center {
+.main__section {
+    height: 87vh;
     flex: 2 0 60%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 2.3fr 5fr 1fr;
+    grid-template-areas:
+        "section__header"
+        "section__main"
+        "section__footer";
 }
 
 .left .info {
@@ -69,15 +77,90 @@ main {
     flex-direction: column;
 }
 
-.center div,
-.right div {
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    background-color: #222;
+.section__information__1 {
+    background: red;
+    grid-area: section__header;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: space-evenly;
 }
 
-.center div div {
-    margin-bottom: 0.5rem;
+.section__information__1 > .carousel__item {
+    min-width: 24%;
+    background-color: purple;
+}
+
+.section__information__container {
+    background: #d9ff00;
+    grid-area: section__main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "colum__1 colum__2 colum__3";
+}
+
+.section__information__2 {
+    background: blue;
+    grid-area: colum__1;
+    display: grid;
+    grid-template-rows: 1fr 1.3fr;
+    grid-template-areas:
+        "carusel__colum__1"
+        "table__colum__1";
+}
+
+.section__information__2 div:first-child {
+    background: #d9ff00;
+    grid-area: carusel__colum__1;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.section__information__2 div:first-child > .carousel__item {
+    min-width: 48%;
+    background-color: purple;
+}
+
+.section__information__2 div:last-child {
+    background: darkblue;
+    grid-area: table__colum__1;
+}
+
+.section__image {
+    background: orange;
+    grid-area: colum__2;
+}
+
+.section__information__3 {
+    background: violet;
+    grid-area: colum__3;
+    display: grid;
+    grid-template-rows: 1fr 1.3fr;
+    grid-template-areas:
+        "carusel__colum__2"
+        "table__colum__2";
+}
+
+.section__information__3 div:first-child {
+    background: #d9ff00;
+    grid-area: carusel__colum__2;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.section__information__3 div:first-child > .carousel__item {
+    min-width: 48%;
+    background-color: purple;
+}
+
+.section__information__3 div:last-child {
+    background: darkblue;
+    grid-area: table__colum__2;
 }
 
 .right {
@@ -89,28 +172,10 @@ main {
     padding: 10px;
 }
 
-.right .right1 .items {
-    display: flex;
-    flex-direction: row;
-}
-
+.right .right1 .items,
 .right .right2 .items {
     display: flex;
     flex-direction: row;
-}
-
-.right .progress-container {
-    width: 100%;
-    background-color: #f5f5f5;
-    height: 10px;
-    margin-top: 5px;
-}
-
-.right .progress-bar {
-    width: 90%;
-    height: 100%;
-    background-color: #4caf50;
-    transition: width 0.5s ease-in-out;
 }
 
 .right .info_progres {
@@ -137,7 +202,12 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
+}
+
+.botones2 {
+    display: flex;
+    align-items: center;
 }
 
 .box {
@@ -154,19 +224,49 @@ footer {
     color: black;
 }
 
-.cabin {
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-}
-
+.cabin,
 .cabin2 {
     font-size: 30px;
     font-weight: bold;
     color: black;
 }
 
-.views,
+.views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__nav {
+    padding: 0 10%;
+    grid-area: footer__section;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__nav > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__nav i {
+    font-size: 2rem;
+}
+
+.footer__nav small {
+    margin-top: 5%;
+    color: var(--color--two);
+}
+
+.footer__nav__1 small {
+    color: var(--color--five11);
+}
+
 .more {
     display: flex;
     align-items: center;
