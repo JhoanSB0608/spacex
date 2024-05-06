@@ -1,34 +1,20 @@
 <!DOCTYPE html>
-<html lang="sp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceX</title>
+    <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <div id="header__title" class="header__title">
-            <div class="load"></div>
-        </div>
+        <div id="header__title" class="header__title"></div>
     </header>
     <main class="main">
-        <nav class="nav__description">
-            <div id="description__item" class="description__item">
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-            </div>
-            <div class="description__buttom">
-                <a href="#">a</a>
-                <a href="#">b</a>
-            </div>
-        </nav>
+        <aside id="main__aside__left" class="main__aside__left"></aside>
         <section class="main__section">
             <article id="section__information__1" class="section__information__1">
                 <div class="load"></div>
@@ -53,7 +39,6 @@
                             </div>
                         </div>
                     </div>
-                    <div>Caja 2</div>
                 </div>
                 <div id="section__image" class="section__image">
                     <div class="load" style="height: 350px"></div>
@@ -68,6 +53,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="carousel__item">
                             <div class="item__progress__bar">
                                 <div class="progress__value">
@@ -77,99 +63,64 @@
                             </div>
                         </div>
                     </div>
-                    <div>Caja 2</div>
+                    
                 </div>
             </article>
-            <footer class="footer">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
         </section>
-        <nav class="nav__information">
-            <div id="information__2" class="information__item">
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
+        <aside id="main__aside__right" class="main__aside__right">
+            <div class="load"></div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <aside class="footer__aside__left">
+            <div class="left__button">
+                <a href="#">a</a>
             </div>
-            <div id="paginacion" class="information__buttom">
-                <div class="load"></div>
+            <div class="left__button">
+                <a href="#">b</a>
+            </div>
+        </aside>
+        <nav class="footer__nav">
+            <div class="footer__nav__1">
+                <img src="storage/img/icons/rocket.svg" alt="">
+                <small>Overview</small>
+            </div>
+            <div class="footer__nav__2">
+                <i class='bx bx-body' style='color:#e72d2d'></i>
+                <small>Life</small>
+            </div>
+            <div class="footer__nav__3">
+                <img src="storage/img/icons/comms.svg" alt="">
+                <small>Comms</small>
+            </div>
+            <div class="footer__nav__4">
+                <img src="storage/img/icons/prop.svg" alt="">
+                <small>Prop</small>
+            </div>
+            <div class="footer__nav__5">
+                <img src="storage/img/icons/mech.svg" alt="">
+                <small>Mech</small>
+            </div>
+            <div class="footer__nav__6">
+                <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
+                <small>Power</small>
+            </div>
+            <div class="footer__nav__7">
+                <i class='bx bxs-chip' style='color:#ffffff'  ></i>
+                <small>Avionics</small>
+            </div>
+            <div class="footer__nav__8">
+                <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
+                <small>GNC</small>
+            </div>
+            <div class="footer__nav__9">
+                <i class='bx bxs-brightness-half' style="color: #fff"></i>
+                <small>Thermal</small>
             </div>
         </nav>
-    </main>
-
-    
-    <!-- Check icons -->
-    <!-- <i class='bx bxs-check-circle' style='color:#9499c3'  ></i>
-    <i class='bx bxs-check-circle' style='color:#40c110'  ></i>
-    <i class='bx bxs-check-circle' style='color:#ea7b15'  ></i> -->
-
-    <!-- Nav icons -->
-    <!-- <img src="storage/img/icons/rocket.svg">
-    <i class='bx bx-body' style='color:#e72d2d'></i>
-    <img src="storage/img/icons/comms.svg">
-    <img src="storage/img/icons/prop.svg">
-    <img src="storage/img/icons/mech.svg">
-    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
-    <i class='bx bxs-chip' style='color:#ffffff'  ></i>
-    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
-    <i class='bx bxs-brightness-half' style="color: #fff"></i>  -->
-    
+        <aside id="footer__aside__right" class="footer__aside__right">
+            <div class="load"></div>
+        </aside>
+    </footer>
 </body>
 </html>
-

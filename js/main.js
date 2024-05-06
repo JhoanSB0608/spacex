@@ -4,7 +4,6 @@ import {
 } from "./modulesComponents/pagination.js";
 
 
-let paginacion = document.querySelector("#paginacion");
-paginacion.innerHTML = ""
-paginacion.append(await paginationRockets())
-
+let pagination = document.querySelector("#footer__aside__right");
+pagination.innerHTML = "";
+pagination.append(await paginationRockets())

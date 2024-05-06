@@ -36,10 +36,10 @@ const getRocketsId = async(e)=>{
     }
     e.target.classList.add('activo');
     
-    let information__2 = document.querySelector("#information__2");
-    information__2.innerHTML = "";
-    let description__item = document.querySelector("#description__item")
-    description__item.innerHTML = "";
+    let main__aside__right = document.querySelector("#main__aside__right");
+    main__aside__right.innerHTML = "";
+    let main__aside__left = document.querySelector("#main__aside__left")
+    main__aside__left.innerHTML = "";
     let section__image = document.querySelector("#section__image")
     section__image.innerHTML = "";
 
@@ -67,7 +67,7 @@ export const paginationRockets = async()=>{
     let rockets = await getAllRockets();
     let div = document.createElement("div");
     div.classList.add("buttom__paginacion")
-  
+
     rockets.forEach((val,id) => {
         let a = document.createElement("a");
         a.setAttribute("href","#");
