@@ -1,4 +1,4 @@
-export const imageRockets = async(flickr_images) => {
+export const imageRockets = async (flickr_images) => {
     let section__image = document.querySelector('#section__image');
     let divs = [];
 
