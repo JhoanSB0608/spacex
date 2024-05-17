@@ -3,9 +3,9 @@ import {
     getAllRocketEngineThrustVacuumTotal
 } from "../modules/rockets.js";
 
-export const informRocketEngineThrustSeaLevel = async(thrust__sea__level)=>{
-    let {kN:totalKN} = await getAllRocketEngineTotal();
-    let porcentaje = (thrust__sea__level.kN * 100)/totalKN;
+export const informRocketEngineThrustSeaLevel = async (thrust__sea__level) => {
+    let { kN: totalKN } = await getAllRocketEngineTotal();
+    let porcentaje = (thrust__sea__level.kN * 100) / totalKN;
     let divGeneral = document.createElement("div");
     divGeneral.classList.add("carousel__item");
     let firstDiv = document.createElement("div");
@@ -20,7 +20,7 @@ export const informRocketEngineThrustSeaLevel = async(thrust__sea__level)=>{
     let lastSmall = document.createElement("small");
     let numKn = new Intl.NumberFormat("cop").format(thrust__sea__level.kN);
     let numLbf = new Intl.NumberFormat("cop").format(thrust__sea__level.lbf);
-    lastSmall.innerHTML=`${numKn} kN <br> ${numLbf} lbf`;
+    lastSmall.innerHTML = `${numKn} kN <br> ${numLbf} lbf`;
 
     firstDivChild.append(strong, firstSmall, lastSmall);
     firstDiv.append(firstDivChild);
@@ -29,19 +29,29 @@ export const informRocketEngineThrustSeaLevel = async(thrust__sea__level)=>{
     let section__information__1 = document.querySelector("#section__information__1");
     section__information__1.innerHTML = "";
     section__information__1.append(divGeneral)
-    // <div class="carousel__item">
-    //     <div class="item__progress__bar">
-    //         <div class="progress__value">
-    //             <strong>Title</strong>
-    //             <small>3</small>
-    //         </div>
-    //     </div>
-    // </div>
 }
 
-export const informRocketEngineThrustVacuum = async(thrust_vacuum)=>{
-    let {kN:totalKN} = await getAllRocketEngineThrustVacuumTotal();
-    let porcentaje = (thrust_vacuum.kN * 100)/totalKN;
+export const RocketEngineImage = async () => {
+
+    let divGeneral = document.createElement("div");
+    divGeneral.classList.add("img__item");
+    let firstDiv = document.createElement("div");
+    firstDiv.classList.add("img");
+    let imgElement = document.createElement("img");
+    imgElement.src = "../../storage/img/img-cohete.png"; 
+    imgElement.alt = "";
+    imgElement.style.width = "270px";
+    firstDiv.appendChild(imgElement);
+
+    divGeneral.append(firstDiv);
+
+    let section__information__1 = document.querySelector("#section__information__1");
+    section__information__1.append(divGeneral);
+}
+
+export const informRocketEngineThrustVacuum = async (thrust_vacuum) => {
+    let { kN: totalKN } = await getAllRocketEngineThrustVacuumTotal();
+    let porcentaje = (thrust_vacuum.kN * 100) / totalKN;
 
     let divGeneral = document.createElement("div");
     divGeneral.classList.add("carousel__item");
@@ -57,7 +67,7 @@ export const informRocketEngineThrustVacuum = async(thrust_vacuum)=>{
     let lastSmall = document.createElement("small");
     let numKn = new Intl.NumberFormat("cop").format(thrust_vacuum.kN);
     let numLbf = new Intl.NumberFormat("cop").format(thrust_vacuum.lbf);
-    lastSmall.innerHTML=`${numKn} kN <br> ${numLbf} lbf`;
+    lastSmall.innerHTML = `${numKn} kN <br> ${numLbf} lbf`;
 
     firstDivChild.append(strong, firstSmall, lastSmall);
     firstDiv.append(firstDivChild);

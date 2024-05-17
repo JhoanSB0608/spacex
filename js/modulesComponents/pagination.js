@@ -13,10 +13,10 @@ import {
 } from "./information.js";
 import { 
     informRocketEngineThrustSeaLevel, 
-    informRocketEngineThrustVacuum
+    informRocketEngineThrustVacuum, RocketEngineImage
 } from "./inform.js";
 import { 
-    imageRockets 
+    imageRockets
 } from "./card.js";
 import {
     tableInformationRockets,
@@ -30,7 +30,6 @@ import {
     progressSecondStageDiameterRocket,
     progressSecondStageHeightRocket,
 } from "./progressBar.js";
-
 
 const getRocketsId = async(e)=>{
     e.preventDefault();
@@ -60,6 +59,7 @@ const getRocketsId = async(e)=>{
     await tableInformationRockets(Rocket);
     await informRocketEngineThrustVacuum(Rocket.engines.thrust_vacuum);
     await tableEngineInformation(Rocket);
+    await RocketEngineImage();
     await imageRockets(Rocket.flickr_images);
 
     await progressRocketWeight(Rocket)
@@ -84,13 +84,5 @@ export const paginationRockets = async()=>{
     });
     let [a1,a2,a3,a4] = div.children
     a1.click();
-    // <div class="buttom__paginacion">
-    //     <a href="#">&laquo;</a> 
-    //     <a href="#" class="activo">1</a>
-    //     <a href="#">2</a>
-    //     <a href="#">3</a>
-    //     <a href="#">4</a>
-    //     <a href="#">&raquo;</a>
-    // </div>
     return div;
 }

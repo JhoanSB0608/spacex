@@ -16,15 +16,6 @@ export const informationRockets = async (country, description) => {
 
     let main__aside__left = document.querySelector("#main__aside__left");
     main__aside__left.append(description__container)
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 
 export const informationLaunchCostRocket = async (cost__per__launch) => {

@@ -124,6 +124,15 @@ body{
     overflow-x: auto;
     justify-content: space-evenly;
 }
+
+.section__information__1 .carousel__item:first-child {
+    order: 2;
+}
+
+.section__information__1:last-child {
+    order: 1;
+}
+
 .section__information__1>.carousel__item{
     min-width: 24%;
     display: flex;
@@ -183,14 +192,16 @@ body{
 .section__information__2 div:last-child{
     grid-area: table__colum__1;
 }
+
+.carrusel__image{
+    height: 100%;
+}
+
 .section__image{
     grid-area: column__2;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.carrusel__image{
-    height: 100%;
 }
 
 .section__image>.carrusel__image { 
@@ -260,6 +271,11 @@ body{
     flex-direction: column;
     overflow-y: auto;
 }
+
+.main__aside__right> .information__container {
+    margin-bottom: 45px;
+}
+
 .information__container{
     display: flex;
     gap: 5px;
